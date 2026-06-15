@@ -100,6 +100,10 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .hero-meta strong{font-family:var(--font-display);font-size:1.5rem;color:var(--wine);display:block;font-weight:600}
 .hero-meta span{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
 .hero-art{position:relative;height:100%;min-height:420px;display:grid;place-items:center}
+.hero-art.has-model{overflow:hidden}
+.hero-model{position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  height:96%;width:auto;max-width:none;object-fit:contain;object-position:bottom center;
+  filter:drop-shadow(-8px 0 32px rgba(30,28,26,.22));pointer-events:none;display:block}
 .hero-tag{background:var(--white);border-radius:18px;padding:30px 30px 26px;box-shadow:var(--shadow);
   width:min(340px,82%);border:1px solid var(--line);position:relative;transform:rotate(-2.5deg)}
 .hero-tag::before{content:"";position:absolute;top:18px;left:-9px;width:18px;height:18px;border-radius:50%;
