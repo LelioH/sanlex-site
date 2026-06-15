@@ -371,9 +371,14 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   .hero-model{height:90%}
   .hero-cta{gap:10px}
   .btn{padding:13px 22px;font-size:.83rem}
-  /* Grids mais compactos */
+  /* Grids — 1 card por linha em phones */
   .cats{gap:10px}
-  .grid{gap:10px}
+  .grid{grid-template-columns:1fr;gap:12px}
+  /* Com 1 coluna há espaço: restaura texto do botão e padding do card */
+  .add span{display:inline}
+  .add{padding:13px 18px}
+  .card-body{padding:16px 16px 18px}
+  .card h3{font-size:1.08rem}
   /* Seções */
   .section{padding:48px 0}
   /* Atacado */
