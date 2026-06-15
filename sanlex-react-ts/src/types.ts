@@ -41,7 +41,7 @@ export interface WaCard {
 export interface HeroConfig {
   eyebrow: string; title: string; titleEmphasis: string; lede: string; image: string;
   heroImage?: string;
-  ctaPrimary: CtaLink; ctaSecondary: CtaLink; stats: Stat[]; tagCard: TagCard;
+  ctaPrimary: CtaLink; ctaSecondary: CtaLink; stats: Stat[]; waCard: WaCard;
 }
 
 export interface Bullet { strong: string; rest: string; }
