@@ -105,12 +105,14 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .hero-tag::before{content:"";position:absolute;top:18px;left:-9px;width:18px;height:18px;border-radius:50%;
   background:var(--cream);border:1px solid var(--line)}
 .hero-tag .lbl{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:700}
-.hero-tag h3{font-size:1.7rem;color:var(--wine);margin:6px 0 14px}
-.hero-tag .swatches{display:flex;gap:8px;margin:0 0 16px}
-.hero-tag .sw{width:34px;height:34px;border-radius:8px;border:1px solid rgba(0,0,0,.06)}
-.hero-tag .row{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;
-  color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:12px}
-.hero-tag .row b{font-family:var(--font-display);color:var(--wine);font-size:1.1rem}
+.hero-tag .wa-text{font-size:.9rem;color:var(--ink-soft);line-height:1.55;margin:8px 0 18px}
+.hero-tag .wa-chips{display:flex;flex-direction:column;gap:9px;margin:0 0 20px}
+.hero-tag .wa-chip{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--ink-soft)}
+.hero-tag .wa-chip svg{flex-shrink:0;color:var(--rose)}
+.hero-tag .wa-btn{display:flex;align-items:center;justify-content:center;gap:9px;
+  background:#25d366;color:#fff;border-radius:10px;padding:11px 16px;
+  font-size:.85rem;font-weight:600;text-decoration:none;transition:background .18s}
+.hero-tag .wa-btn:hover{background:#1fb659}
 
 .benefits{background:var(--wine);color:#f5dfd9;overflow:hidden;padding:16px 0}
 .bn-track{display:flex;gap:60px;white-space:nowrap;animation:marq 32s linear infinite;width:max-content}

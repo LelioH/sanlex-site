@@ -34,14 +34,13 @@ export interface Product {
 export interface CtaLink { label: string; href: string; }
 export interface Stat { value: string; label: string; }
 
-export interface TagCard {
-  label: string; product: string; swatches: string[];
-  ref: string; price?: string;
+export interface WaCard {
+  label: string; text: string; hours: string; responseTime: string; buttonLabel: string;
 }
 
 export interface HeroConfig {
   eyebrow: string; title: string; titleEmphasis: string; lede: string; image: string;
-  ctaPrimary: CtaLink; ctaSecondary: CtaLink; stats: Stat[]; tagCard: TagCard;
+  ctaPrimary: CtaLink; ctaSecondary: CtaLink; stats: Stat[]; waCard: WaCard;
 }
 
 export interface Bullet { strong: string; rest: string; }
