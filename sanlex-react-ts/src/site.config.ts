@@ -91,8 +91,8 @@ export const config: SiteConfig = {
   /* -- SEO: título e descrição da aba do navegador / mecanismos de busca -- */
   seo: {
     lang: "pt-BR",
-    title: "Sanlex · Moda Íntima — Confecção de Lingerie",
-    description: "Sanlex Confecções — lingerie feminina com acabamento de atelier. Sutiãs, calcinhas, conjuntos, modeladores e plus size. Atacado e varejo, de Nova Friburgo (RJ)."
+    title: "H.W. Sanlex · Moda Íntima — Confecção de Lingerie",
+    description: "H.W. Sanlex Confecções — lingerie feminina com acabamento de atelier. Sutiãs, calcinhas, conjuntos, modeladores e plus size. Atacado e varejo, de Nova Friburgo (RJ)."
   },
 
   activeTheme: "classic",   // id de algum tema acima
@@ -106,21 +106,21 @@ export const config: SiteConfig = {
   },
 
   brand: {
-    name: "Sanlex",
-    legalName: "Sanlex Confecções",   // nome jurídico usado no rodapé
+    name: "H.W. Sanlex",
+    legalName: "H.W. Sanlex Confecções",   // nome jurídico usado no rodapé
     badge: "Moda Íntima",
     since: "2011"
   },
 
   contact: {
-    whatsapp: "5522999999999",      // <-- TROQUE: 55 + DDD + número (só dígitos)
+    whatsapp: "5522997267309",      // <-- TROQUE: 55 + DDD + número (só dígitos)
     instagramMain: "https://instagram.com/hwsanlex",
     instagramSecondary: "https://instagram.com/sanlexconfeccoes",
     addressLine: "Rua Sanglard, 156 — Conselheiro Paulino",
     city: "Nova Friburgo · RJ",
     hours: "Seg a Sex · 8h–18h",
     cnpj: "14.193.159/0001-84",
-    whatsappFloatMessage: "Olá Sanlex! Vim pelo site e gostaria de informações.",
+    whatsappFloatMessage: "Olá! Vim pelo site e gostaria de informações.",
     whatsappLabel: "WhatsApp da fábrica",
     instagramSecondaryLabel: "Confecções"
   },
@@ -137,7 +137,7 @@ export const config: SiteConfig = {
   announcement: "Atacado & Varejo · Frete grátis acima de R$300 · Direto da fábrica em Nova Friburgo / RJ",
 
   marquee: [
-    "Frete grátis acima de R$300", "Confecção própria", "Do P ao G3", "Atacado & varejo",
+    "Frete grátis acima de R$300", "Confecção própria", "Do P ao GG", "Atacado & varejo",
     "Envio p/ todo o Brasil", "Pague no Pix ou cartão", "Qualidade de atelier", "Nova Friburgo · RJ"
   ],
 
@@ -151,15 +151,15 @@ export const config: SiteConfig = {
     ctaSecondary: { label: "Comprar no atacado", href: "#atacado" },
     stats: [
       { value: "14+", label: "anos de fábrica" },
-      { value: "P ao G3", label: "todas as curvas" },
+      { value: "P ao GG", label: "todas as curvas" },
       { value: "RJ", label: "produção nacional" }
     ],
     tagCard: {
-      label: "Etiqueta Sanlex",
-      product: "Cetinete Power",
-      swatches: ["#43141f", "#b85c72", "#ead9cf", "#2c2c2c"],
-      ref: "REF 144 · P ao GG",
-      price: "R$ 64,90"
+      label: "Produtos H.W. Sanlex",
+      product: "Nossas cores",
+      swatches: ["#8f2f35", "#111f40", "#5b6961", "#000000", "#ffffff"],
+      ref: "P ao GG",
+      // price: "R$ 64,90"
     }
   },
 
@@ -168,42 +168,39 @@ export const config: SiteConfig = {
     { id: "sutia",     name: "Sutiãs",      glyph: "sutia", c1: "#f3dfdc", c2: "#c98ea0", image: "" },
     { id: "calcinha",  name: "Calcinhas",   glyph: "calc",  c1: "#ead9cf", c2: "#b85c72", image: "" },
     { id: "conjunto",  name: "Conjuntos",   glyph: "set",   c1: "#f6ece6", c2: "#9d4459", image: "/img/categorias/conjunto.jpg" },
-    { id: "modelador", name: "Modeladores", glyph: "shape", c1: "#e7c3c6", c2: "#5d1f2d", image: "" },
-    { id: "pijama",    name: "Pijamas",     glyph: "sleep", c1: "#f3dfdc", c2: "#a8845b", image: "" },
-    { id: "plus",      name: "Plus Size",   glyph: "plus",  c1: "#ead9cf", c2: "#43141f", image: "" }
+    // { id: "modelador", name: "Modeladores", glyph: "shape", c1: "#e7c3c6", c2: "#5d1f2d", image: "" },
+    { id: "pijama",    name: "Pijamas",     glyph: "sleep", c1: "#f3dfdc", c2: "#a8845b", image: "" }
+    // { id: "plus",      name: "Plus Size",   glyph: "plus",  c1: "#ead9cf", c2: "#43141f", image: "" }
   ],
 
   products: [
-    { ref: "001", name: "Sutiã Bojo Microfibra",      cats: ["sutia"],                price: 49.90,  sizes: ["P","M","G","GG"],      fabric: "Microfibra · bojo fixo",          badge: "Mais vendido", image: "" },
-    { ref: "144", name: "Sutiã Cetinete Power",        cats: ["sutia"],                price: 64.90,  sizes: ["P","M","G","GG"],      fabric: "Cetinete · alça regulável",       badge: "", image: "" },
-    { ref: "058", name: "Sutiã Sem Bojo Algodão",      cats: ["sutia"],                price: 39.90,  sizes: ["P","M","G","GG"],      fabric: "Algodão · sem costura",           badge: "", image: "" },
-    { ref: "150", name: "Sutiã Amamentação",           cats: ["sutia"],                price: 57.90,  sizes: ["M","G","GG","3G"],     fabric: "Microfibra · abertura frontal",   badge: "", image: "" },
-    { ref: "107", name: "Calcinha Caleçom",            cats: ["calcinha"],             price: 24.90,  sizes: ["P","M","G","GG"],      fabric: "Microfibra · cobertura total",    badge: "", image: "" },
-    { ref: "172", name: "Calcinha Tanga Renda",        cats: ["calcinha"],             price: 19.90,  sizes: ["P","M","G","GG"],      fabric: "Renda · lateral fina",            badge: "", image: "" },
-    { ref: "211", name: "Calcinha Fio Microfibra",     cats: ["calcinha"],             price: 17.90,  sizes: ["P","M","G"],           fabric: "Microfibra · fio dental",         badge: "", image: "" },
-    { ref: "088", name: "Calcinha Modeladora Alta",    cats: ["calcinha","modelador"], price: 34.90,  sizes: ["P","M","G","GG"],      fabric: "Cintura alta · compressão suave", badge: "", image: "" },
-    { ref: "142", name: "Conjunto Renda Aurora",         cats: ["conjunto"],           price: 89.90,  sizes: ["P","M","G","GG"],      fabric: "Renda · sutiã + calcinha",        badge: "Novo", image: "/img/produtos/ref142-frente.jpg",  imageBack: "/img/produtos/ref142-costas.jpg" },
-    { ref: "143", name: "Conjunto Renda Serena",         cats: ["conjunto"],           price: 89.90,  sizes: ["P","M","G","GG"],      fabric: "Renda · sutiã + calcinha",        badge: "Novo", image: "/img/produtos/ref143-frente.jpg" },
-    { ref: "156", name: "Conjunto Microfibra Essencial", cats: ["conjunto"],           price: 74.90,  sizes: ["P","M","G","GG"],      fabric: "Microfibra · básico do dia",      badge: "", image: "/img/produtos/ref156-frente.jpg",   imageBack: "/img/produtos/ref156-costas.jpg" },
-    { ref: "199", name: "Conjunto Noiva Branco",        cats: ["conjunto"],            price: 119.90, sizes: ["P","M","G"],           fabric: "Renda francesa · detalhe pérola", badge: "", image: "" },
-    { ref: "285", name: "Cinta Abertura Lateral",      cats: ["modelador"],            price: 99.90,  sizes: ["P","M","G","GG","3G"], fabric: "Modelador · zíper lateral",       badge: "", image: "" },
-    { ref: "286", name: "Cinta Fio Modeladora",        cats: ["modelador"],            price: 109.90, sizes: ["P","M","G","GG"],      fabric: "Compressão média · sem marcar",   badge: "", image: "" },
-    { ref: "301", name: "Body Redutor",                cats: ["modelador"],            price: 129.90, sizes: ["M","G","GG","3G"],     fabric: "Modelador integral · alça larga", badge: "Top", image: "" },
-    { ref: "410", name: "Camisola Cetim",              cats: ["pijama"],               price: 79.90,  sizes: ["P","M","G","GG"],      fabric: "Cetim · com renda no busto",      badge: "", image: "" },
-    { ref: "422", name: "Pijama Renda Manga",          cats: ["pijama"],               price: 94.90,  sizes: ["P","M","G","GG"],      fabric: "Viscose · short + blusa",         badge: "", image: "" },
-    { ref: "284", name: "Sutiã Bralette Plus",         cats: ["plus","sutia"],         price: 59.90,  sizes: ["52","54","56"],        fabric: "Renda · sem bojo · plus",         badge: "", image: "" },
-    { ref: "320", name: "Conjunto Plus Renda",         cats: ["plus","conjunto"],      price: 99.90,  sizes: ["48","50","52","54"],   fabric: "Renda · sutiã + calcinha plus",   badge: "Plus", image: "" },
-    { ref: "333", name: "Calcinha Plus Conforto",      cats: ["plus","calcinha"],      price: 29.90,  sizes: ["46","48","50","52"],   fabric: "Algodão · cós duplo · plus",      badge: "", image: "" },
-    { ref: "283", name: "Sutiã Bralette Renda",        cats: ["sutia"],                price: 54.90,  sizes: ["46","48","50"],        fabric: "Renda · costas nadadora",         badge: "", image: "" }
+    { ref: "0470", name: "Conjunto Lulu",  cats: ["conjunto"],  price: 89.90,  sizes: ["P","M","G","GG"],  fabric: "Renda · sutiã + calcinha",    badge: "Novo",         image: "/img/produtos/ref0470-f.jpg",  imageBack: "/img/produtos/ref0470-c.jpg" },
+    { ref: "0472", name: "Conjunto Mel",   cats: ["conjunto"],  price: 89.90,  sizes: ["P","M","G","GG"],  fabric: "Renda · sutiã + calcinha",    badge: "Mais vendido", image: "/img/produtos/ref0472-f.jpg",  imageBack: "/img/produtos/ref0472-f.jpg" },
+    { ref: "0464", name: "Conjunto Luma",  cats: ["conjunto"],  price: 74.90,  sizes: ["P","M","G","GG"],  fabric: "Microfibra · básico do dia",  badge: "",             image: "/img/produtos/ref0464-f.jpg",  imageBack: "/img/produtos/ref0464-c.jpg" },
+    { ref: "0465", name: "Conjunto Mily",  cats: ["conjunto"],  price: 74.90,  sizes: ["P","M","G","GG"],  fabric: "Microfibra · básico do dia",  badge: "",             image: "/img/produtos/ref0465-f.jpg",  imageBack: "/img/produtos/ref0465-c.jpg" },
+    { ref: "0482", name: "Conjunto Myla",  cats: ["conjunto"],  price: 74.90,  sizes: ["P","M","G","GG"],  fabric: "Microfibra · básico do dia",  badge: "",             image: "/img/produtos/ref0482-f.jpg",  imageBack: "/img/produtos/ref0482-c.jpg" },
+    { ref: "0481", name: "Conjunto Layla", cats: ["conjunto"],  price: 74.90,  sizes: ["P","M","G","GG"],  fabric: "Microfibra · básico do dia",  badge: "",             image: "/img/produtos/ref0481-f.jpg",  imageBack: "/img/produtos/ref0481-c.jpg" },
+    { ref: "0483", name: "Conjunto Lara",  cats: ["conjunto"],  price: 74.90,  sizes: ["P","M","G","GG"],  fabric: "Microfibra · básico do dia",  badge: "",             image: "/img/produtos/ref0483-f.jpg",  imageBack: "/img/produtos/ref0483-c.jpg" },
+    { ref: "0484", name: "Conjunto Lily",  cats: ["conjunto"],  price: 74.90,  sizes: ["P","M","G","GG"],  fabric: "Microfibra · básico do dia",  badge: "",             image: "/img/produtos/ref0484-f.jpg",  imageBack: "/img/produtos/ref0484-c.jpg" },
+    { ref: "0491", name: "Conjunto Ariel", cats: ["conjunto"],  price: 74.90,  sizes: ["P","M","G","GG"],  fabric: "Microfibra · básico do dia",  badge: "",             image: "/img/produtos/ref0491-f.jpg",  imageBack: "/img/produtos/ref0491-c.jpg" },
+    // { ref: "001", name: "Sutiã Bojo Microfibra",          cats: ["sutia"],           price: 49.90,  sizes: ["P","M","G","GG"],  fabric: "Microfibra · bojo fixo",            badge: "Mais vendido", image: "" },
+    // { ref: "107", name: "Calcinha Caleçom",               cats: ["calcinha"],        price: 24.90,  sizes: ["P","M","G","GG"],  fabric: "Microfibra · cobertura total",      badge: "", image: "" },
+    // { ref: "088", name: "Calcinha Modeladora Alta",       cats: ["calcinha"],        price: 34.90,  sizes: ["P","M","G","GG"],  fabric: "Cintura alta · compressão suave",   badge: "", image: "" },
+    // { ref: "199", name: "Conjunto Noiva Branco",          cats: ["conjunto"],        price: 119.90, sizes: ["P","M","G"],       fabric: "Renda francesa · detalhe pérola",   badge: "", image: "" },
+    // { ref: "410", name: "Camisola Cetim",                 cats: ["pijama"],          price: 79.90,  sizes: ["P","M","G","GG"],  fabric: "Cetim · com renda no busto",        badge: "", image: "" },
+    // { ref: "284", name: "Sutiã Bralette Plus",            cats: ["plus","sutia"],    price: 59.90,  sizes: ["52","54","56"],    fabric: "Renda · sem bojo · plus",           badge: "", image: "" },
+    // { ref: "320", name: "Conjunto Plus Renda",         cats: ["plus","conjunto"],      price: 99.90,  sizes: ["48","50","52","54"],   fabric: "Renda · sutiã + calcinha plus",   badge: "Plus", image: "" },
+    // { ref: "333", name: "Calcinha Plus Conforto",      cats: ["plus","calcinha"],      price: 29.90,  sizes: ["46","48","50","52"],   fabric: "Algodão · cós duplo · plus",      badge: "", image: "" },
+    // { ref: "285", name: "Cinta Abertura Lateral",      cats: ["modelador"],            price: 99.90,  sizes: ["P","M","G","GG","3G"], fabric: "Modelador · zíper lateral",       badge: "", image: "" },
   ],
 
   atacado: {
     eyebrow: "Para lojistas e revendedoras",
-    title: "Venda Sanlex na sua loja",
+    title: "Venda H.W. Sanlex na sua loja",
     text: "Somos confecção: você compra direto de quem fabrica, com preço de atacado, grade fechada ou sortida e reposição ágil para o ano inteiro.",
     bullets: [
       { strong: "Pedido mínimo acessível", rest: " — comece com pouco e reponha o que girar." },
-      { strong: "Grade do P ao G3", rest: " — atenda todas as clientes da sua região." },
+      { strong: "Grade do P ao GG", rest: " — atenda todas as clientes da sua região." },
       { strong: "Envio para todo o Brasil", rest: " com transportadora e Correios." }
     ],
     cta: "Falar com o comercial no WhatsApp",
@@ -217,7 +214,7 @@ export const config: SiteConfig = {
     title: "Moda íntima feita com mão de costureira",
     paragraphs: [
       "Nascemos em Conselheiro Paulino, em Nova Friburgo — a maior região de moda íntima do país. Desde 2011 a Sanlex Confecções desenha, corta e costura cada peça pensando no que importa de verdade: caimento, conforto e durabilidade.",
-      "Trabalhamos com tecidos como microfibra, cetinete, renda e algodão, em modelagens que vão do P ao G3, para que nenhuma mulher fique de fora. Atendemos do consumidor final ao lojista, sempre direto da fábrica."
+      "Trabalhamos com tecidos como microfibra, cetinete, renda e algodão, em modelagens que vão do P ao GG, para que nenhuma mulher fique de fora. Atendemos do consumidor final ao lojista, sempre direto da fábrica."
     ],
     sealNumber: "14",
     sealLabel: "anos de atelier",
@@ -256,7 +253,7 @@ export const config: SiteConfig = {
   ui: {
     /* Catálogo */
     catalogEyebrow: "Catálogo",
-    catalogTitle: "A coleção Sanlex",
+    catalogTitle: "A coleção H.W. Sanlex",
     catalogPriceNote: "Preços de varejo. Lojista? Veja as",
     catalogWholesaleLink: "condições de atacado",
     catalogAllLabel: "Todos",
@@ -293,7 +290,7 @@ export const config: SiteConfig = {
     toastFaved: "Salvo nos favoritos: ",
 
     /* Mensagem de checkout enviada ao WhatsApp */
-    checkoutGreeting: "Olá Sanlex! Gostaria de finalizar este pedido:",
+    checkoutGreeting: "Olá H.W. Sanlex! Gostaria de finalizar este pedido:",
     checkoutPaymentQuestion: "Pode me passar formas de pagamento e frete?"
   }
 };
