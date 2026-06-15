@@ -15,6 +15,8 @@ export function applyTheme(theme: Theme): void {
   root.style.setProperty("--font-display", `"${theme.fonts.display.name}", Georgia, serif`);
   root.style.setProperty("--font-body", `"${theme.fonts.body.name}", system-ui, sans-serif`);
   root.style.setProperty("--radius", theme.radius);
+  if (theme.shadow)   root.style.setProperty("--shadow",    theme.shadow);
+  if (theme.shadowSm) root.style.setProperty("--shadow-sm", theme.shadowSm);
 }
 
 export function loadFonts(theme: Theme): void {

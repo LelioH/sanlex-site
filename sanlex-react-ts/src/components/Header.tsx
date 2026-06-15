@@ -3,11 +3,19 @@ import config from "../site.config";
 import { useStore } from "../store/StoreContext";
 
 function Brand({ className }: { className?: string }) {
+  const { brand } = config;
+  if (brand.logo) {
+    return (
+      <a href="#top" className={"brand brand--logo " + (className ?? "")} aria-label={brand.name}>
+        <img src={brand.logo} alt={brand.name} className="brand-logo" />
+      </a>
+    );
+  }
   return (
-    <a href="#top" className={"brand " + (className ?? "")} aria-label={config.brand.name}>
-      {config.brand.name}
+    <a href="#top" className={"brand " + (className ?? "")} aria-label={brand.name}>
+      {brand.name}
       <span className="dot" />
-      <small dangerouslySetInnerHTML={{ __html: config.brand.badge.replace(/ /g, "&nbsp;") }} />
+      <small dangerouslySetInnerHTML={{ __html: brand.badge.replace(/ /g, "&nbsp;") }} />
     </a>
   );
 }

@@ -9,9 +9,11 @@ export default function Footer() {
       <div className="wrap">
         <div className="ftr-grid">
           <div>
-            <a href="#top" className="brand">
-              {config.brand.name}<span className="dot" />
-              <small dangerouslySetInnerHTML={{ __html: config.brand.badge.replace(/ /g, "&nbsp;") }} />
+            <a href="#top" className={config.brand.logo ? "brand brand--logo" : "brand"}>
+              {config.brand.logo
+                ? <img src={config.brand.logo} alt={config.brand.name} className="brand-logo brand-logo--ftr" />
+                : <>{config.brand.name}<span className="dot" /><small dangerouslySetInnerHTML={{ __html: config.brand.badge.replace(/ /g, "&nbsp;") }} /></>
+              }
             </a>
             <p>{config.footer.blurb}</p>
           </div>
