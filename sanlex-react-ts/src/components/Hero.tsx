@@ -31,17 +31,21 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero-art">
-          <div className="hero-tag">
-            <span className="lbl">{h.tagCard.label}</span>
-            <h3>{h.tagCard.product}</h3>
-            <div className="swatches">
-              {h.tagCard.swatches.map((c, i) => (
-                <span key={i} className="sw" style={{ background: c }} />
-              ))}
+        <div className={"hero-art" + (h.heroImage ? " has-model" : "")}>
+          {h.heroImage ? (
+            <img src={h.heroImage} alt="" className="hero-model" aria-hidden="true" />
+          ) : (
+            <div className="hero-tag">
+              <span className="lbl">{h.tagCard.label}</span>
+              <h3>{h.tagCard.product}</h3>
+              <div className="swatches">
+                {h.tagCard.swatches.map((c, i) => (
+                  <span key={i} className="sw" style={{ background: c }} />
+                ))}
+              </div>
+              <div className="row"><span>{h.tagCard.ref}</span><b>{h.tagCard.price}</b></div>
             </div>
-            <div className="row"><span>{h.tagCard.ref}</span><b>{h.tagCard.price}</b></div>
-          </div>
+          )}
         </div>
       </div>
     </section>
