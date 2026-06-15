@@ -167,7 +167,7 @@ export const config: SiteConfig = {
   categories: [
     { id: "sutia",     name: "Sutiãs",      glyph: "sutia", c1: "#f3dfdc", c2: "#c98ea0", image: "" },
     { id: "calcinha",  name: "Calcinhas",   glyph: "calc",  c1: "#ead9cf", c2: "#b85c72", image: "" },
-    { id: "conjunto",  name: "Conjuntos",   glyph: "set",   c1: "#f6ece6", c2: "#9d4459", image: "" },
+    { id: "conjunto",  name: "Conjuntos",   glyph: "set",   c1: "#f6ece6", c2: "#9d4459", image: "/img/categorias/conjunto.jpg" },
     { id: "modelador", name: "Modeladores", glyph: "shape", c1: "#e7c3c6", c2: "#5d1f2d", image: "" },
     { id: "pijama",    name: "Pijamas",     glyph: "sleep", c1: "#f3dfdc", c2: "#a8845b", image: "" },
     { id: "plus",      name: "Plus Size",   glyph: "plus",  c1: "#ead9cf", c2: "#43141f", image: "" }
@@ -182,9 +182,10 @@ export const config: SiteConfig = {
     { ref: "172", name: "Calcinha Tanga Renda",        cats: ["calcinha"],             price: 19.90,  sizes: ["P","M","G","GG"],      fabric: "Renda · lateral fina",            badge: "", image: "" },
     { ref: "211", name: "Calcinha Fio Microfibra",     cats: ["calcinha"],             price: 17.90,  sizes: ["P","M","G"],           fabric: "Microfibra · fio dental",         badge: "", image: "" },
     { ref: "088", name: "Calcinha Modeladora Alta",    cats: ["calcinha","modelador"], price: 34.90,  sizes: ["P","M","G","GG"],      fabric: "Cintura alta · compressão suave", badge: "", image: "" },
-    { ref: "142", name: "Conjunto Renda Aurora",       cats: ["conjunto"],             price: 89.90,  sizes: ["P","M","G","GG"],      fabric: "Renda · sutiã + calcinha",        badge: "Novo", image: "" },
-    { ref: "156", name: "Conjunto Microfibra Essencial",cats: ["conjunto"],            price: 74.90,  sizes: ["P","M","G","GG"],      fabric: "Microfibra · básico do dia",      badge: "", image: "" },
-    { ref: "199", name: "Conjunto Noiva Branco",       cats: ["conjunto"],             price: 119.90, sizes: ["P","M","G"],           fabric: "Renda francesa · detalhe pérola", badge: "", image: "" },
+    { ref: "142", name: "Conjunto Renda Aurora",         cats: ["conjunto"],           price: 89.90,  sizes: ["P","M","G","GG"],      fabric: "Renda · sutiã + calcinha",        badge: "Novo", image: "/img/produtos/ref142-frente.jpg",  imageBack: "/img/produtos/ref142-costas.jpg" },
+    { ref: "143", name: "Conjunto Renda Serena",         cats: ["conjunto"],           price: 89.90,  sizes: ["P","M","G","GG"],      fabric: "Renda · sutiã + calcinha",        badge: "Novo", image: "/img/produtos/ref143-frente.jpg" },
+    { ref: "156", name: "Conjunto Microfibra Essencial", cats: ["conjunto"],           price: 74.90,  sizes: ["P","M","G","GG"],      fabric: "Microfibra · básico do dia",      badge: "", image: "/img/produtos/ref156-frente.jpg",   imageBack: "/img/produtos/ref156-costas.jpg" },
+    { ref: "199", name: "Conjunto Noiva Branco",        cats: ["conjunto"],            price: 119.90, sizes: ["P","M","G"],           fabric: "Renda francesa · detalhe pérola", badge: "", image: "" },
     { ref: "285", name: "Cinta Abertura Lateral",      cats: ["modelador"],            price: 99.90,  sizes: ["P","M","G","GG","3G"], fabric: "Modelador · zíper lateral",       badge: "", image: "" },
     { ref: "286", name: "Cinta Fio Modeladora",        cats: ["modelador"],            price: 109.90, sizes: ["P","M","G","GG"],      fabric: "Compressão média · sem marcar",   badge: "", image: "" },
     { ref: "301", name: "Body Redutor",                cats: ["modelador"],            price: 129.90, sizes: ["M","G","GG","3G"],     fabric: "Modelador integral · alça larga", badge: "Top", image: "" },

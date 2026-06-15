@@ -146,8 +146,15 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s,opacity .5s}
 .card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
 .card-media{position:relative;aspect-ratio:4/5;overflow:hidden}
-.card-media .fill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.card:hover .card-media .fill{transform:scale(1.05)}
+.card-media .fill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* Zoom suave quando não há foto de costas */
+.card-media:not(.has-back) .fill{transition:transform .5s}
+.card:hover .card-media:not(.has-back) .fill{transform:scale(1.05)}
+/* Crossfade frente → costas no hover */
+.card-media.has-back .fill-front{transition:opacity .45s ease}
+.card-media.has-back .fill-back{opacity:0;z-index:1;transition:opacity .45s ease}
+.card:hover .card-media.has-back .fill-front{opacity:0}
+.card:hover .card-media.has-back .fill-back{opacity:1}
 .card-media .glyph{position:absolute;inset:0;margin:auto;width:64px;height:64px;color:rgba(67,20,31,.42)}
 .fav{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.9);
   display:grid;place-items:center;color:var(--wine);box-shadow:var(--shadow-sm);z-index:2;transition:transform .2s}
