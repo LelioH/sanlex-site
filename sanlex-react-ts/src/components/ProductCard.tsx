@@ -11,7 +11,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <article className="card">
-      <div className="card-media">
+      <div className={"card-media" + (product.imageBack ? " has-back" : "")}>
         {product.badge ? <div className="tag-badge">{product.badge}</div> : null}
         <button
           className={"fav" + (isFav ? " on" : "")}
@@ -24,7 +24,12 @@ export default function ProductCard({ product }: { product: Product }) {
           </svg>
         </button>
         {product.image ? (
-          <img className="fill" src={product.image} alt={product.name} loading="lazy" />
+          <>
+            <img className="fill fill-front" src={product.image} alt={product.name} loading="lazy" />
+            {product.imageBack && (
+              <img className="fill fill-back" src={product.imageBack} alt="" loading="lazy" />
+            )}
+          </>
         ) : (
           <>
             <div className="fill" style={fillStyle(cat)} />

@@ -26,6 +26,7 @@ export interface Category {
 export interface Product {
   ref: string; name: string; cats: string[]; price: number;
   sizes: string[]; fabric: string; badge: string; image: string;
+  imageBack?: string;
 }
 
 export interface CtaLink { label: string; href: string; }
