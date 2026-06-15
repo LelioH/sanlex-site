@@ -34,9 +34,8 @@ export interface Product {
 export interface CtaLink { label: string; href: string; }
 export interface Stat { value: string; label: string; }
 
-export interface TagCard {
-  label: string; product: string; swatches: string[];
-  ref: string; price?: string;
+export interface WaCard {
+  label: string; text: string; hours: string; responseTime: string; buttonLabel: string;
 }
 
 export interface HeroConfig {

@@ -183,12 +183,12 @@ export const config: SiteConfig = {
       { value: "P ao GG", label: "todas as curvas" },
       { value: "RJ", label: "produção nacional" }
     ],
-    tagCard: {
-      label: "Produtos H.W. Sanlex",
-      product: "Nossas cores",
-      swatches: ["#8f2f35", "#111f40", "#5b6961", "#000000", "#ffffff"],
-      ref: "P ao GG",
-      // price: "R$ 64,90"
+    waCard: {
+      label: "Atendimento exclusivo",
+      text: "Dúvida de tamanho ou tecido? A gente te ajuda antes de comprar.",
+      hours: "Seg–Sáb, 8h–18h",
+      responseTime: "Resposta em até 5 min",
+      buttonLabel: "Falar pelo WhatsApp"
     }
   },
 

@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import config from "../site.config";
+import { waUrl } from "../lib/links";
 
 export default function Hero() {
   const h = config.hero;
