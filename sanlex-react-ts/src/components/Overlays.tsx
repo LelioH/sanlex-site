@@ -35,7 +35,7 @@ interface ThemeSwitcherProps {
 /* Seletor de tema por época (preview ao vivo).
    Esconda em produção: settings.showThemeSwitcher = false */
 export function ThemeSwitcher({ value, onChange }: ThemeSwitcherProps) {
-  if (!config.settings.showThemeSwitcher) return null;
+  if (!import.meta.env.DEV) return null;
   return (
     <div className="theme-switch">
       <label htmlFor="theme">Tema</label>

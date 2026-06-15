@@ -38,9 +38,16 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .hdr-in{display:flex;align-items:center;gap:28px;height:74px}
 .brand{display:flex;align-items:baseline;gap:9px;font-family:var(--font-display);
   font-size:1.7rem;font-weight:600;letter-spacing:-.02em;color:var(--wine);flex-shrink:0}
+.brand--logo{align-items:center;gap:0}
 .brand .dot{width:7px;height:7px;border-radius:50%;background:var(--rose);align-self:center;margin:0 -2px}
 .brand small{font-family:var(--font-body);font-size:.56rem;letter-spacing:.34em;text-transform:uppercase;
   color:var(--ink-soft);font-weight:600;transform:translateY(-3px)}
+/* Logo da marca */
+.brand-logo{height:46px;width:auto;display:block}
+/* No header (fundo claro): sombra sutil para o amarelo aparecer */
+.hdr .brand-logo{filter:drop-shadow(0 1px 3px rgba(0,0,0,.22))}
+/* No rodapé (fundo carvão): logo amarelo aparece naturalmente */
+.brand-logo--ftr{height:54px;filter:none}
 .nav{display:flex;gap:30px;margin-left:8px;flex:1}
 .nav a{font-size:.82rem;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);
   position:relative;padding:6px 0;transition:color .2s}

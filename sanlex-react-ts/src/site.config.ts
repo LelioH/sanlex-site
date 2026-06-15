@@ -81,6 +81,34 @@ export const themes: Record<string, Theme> = {
       body: { name: "Outfit", query: "Outfit:wght@400;500;600;700" }
     },
     radius: "16px"
+  },
+
+  /* Tema oficial da marca — carvão escuro + dourado da logo */
+  hwSanlex: {
+    name: "H.W. Sanlex",
+    colors: {
+      wine:     "#1e1c1a",   // carvão escuro (fundo de botões, header, footer)
+      wine2:    "#131110",   // carvão mais fundo
+      rose:     "#d4a400",   // dourado da marca (destaque principal)
+      roseDeep: "#b48c00",   // dourado mais intenso
+      blush:    "#faf3e0",   // champanhe claro (gradientes hero, categorias)
+      nude:     "#f0e4c0",   // creme dourado
+      cream:    "#fdf9ef",   // fundo principal (branco quente)
+      cream2:   "#f7f0de",   // fundo secundário
+      ink:      "#1a1816",   // texto (quase preto quente)
+      inkSoft:  "#5c5040",   // texto suave
+      gold:     "#d4a400",   // mesmo que rose — dourado unificado
+      line:     "#e4d8a8",   // divisores bege-dourado
+      white:    "#fffef5",   // branco quente (cards)
+      ok:       "#3f7a5a"    // verde status
+    },
+    fonts: {
+      display: { name: "Fraunces", query: "Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400" },
+      body:    { name: "Manrope",  query: "Manrope:wght@400;500;600;700" }
+    },
+    radius: "14px",
+    shadow:   "0 18px 50px -28px rgba(30,28,26,.60)",
+    shadowSm: "0 8px 24px -16px rgba(30,28,26,.45)"
   }
 };
 
@@ -95,21 +123,21 @@ export const config: SiteConfig = {
     description: "H.W. Sanlex Confecções — lingerie feminina com acabamento de atelier. Sutiãs, calcinhas, conjuntos, modeladores e plus size. Atacado e varejo, de Nova Friburgo (RJ)."
   },
 
-  activeTheme: "classic",   // id de algum tema acima
+  activeTheme: "hwSanlex",  // id de algum tema acima
 
   settings: {
     currency: "R$",
     freeShippingFrom: 300,
     installments: "3x sem juros",
-    showThemeSwitcher: true,  // false em produção para esconder o seletor
-    storageKey: "sanlex"      // prefixo do localStorage (mude se trocar de marca)
+    storageKey: "sanlex"   // prefixo do localStorage (mude se trocar de marca)
   },
 
   brand: {
     name: "H.W. Sanlex",
     legalName: "H.W. Sanlex Confecções",   // nome jurídico usado no rodapé
     badge: "Moda Íntima",
-    since: "2011"
+    since: "2011",
+    logo: "/img/logo.png"   // PNG com fundo transparente — deixe "" para usar texto
   },
 
   contact: {

@@ -16,6 +16,8 @@ export interface Theme {
   colors: ThemeColors;
   fonts: { display: FontSpec; body: FontSpec };
   radius: string;
+  shadow?: string;
+  shadowSm?: string;
 }
 
 export interface Category {
@@ -70,11 +72,10 @@ export interface Settings {
   currency: string;
   freeShippingFrom: number;
   installments: string;
-  showThemeSwitcher: boolean;
   storageKey: string;
 }
 
-export interface Brand { name: string; legalName: string; badge: string; since: string; }
+export interface Brand { name: string; legalName: string; badge: string; since: string; logo?: string; }
 
 export interface Contact {
   whatsapp: string; instagramMain: string; instagramSecondary: string;
