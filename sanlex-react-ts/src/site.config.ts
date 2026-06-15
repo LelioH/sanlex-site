@@ -175,6 +175,7 @@ export const config: SiteConfig = {
     titleEmphasis: "e a confiança.",
     lede: "Sutiãs, calcinhas, conjuntos, modeladores e plus size com acabamento de atelier — feitos peça por peça em Nova Friburgo, no coração da moda íntima do Brasil.",
     image: "",
+    heroImage: "/img/hero/modelo.png",   // PNG com fundo transparente — deixe "" ou remova para usar o card
     ctaPrimary: { label: "Ver a coleção", href: "#colecao" },
     ctaSecondary: { label: "Comprar no atacado", href: "#atacado" },
     stats: [

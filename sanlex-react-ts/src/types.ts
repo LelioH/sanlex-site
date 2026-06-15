@@ -41,6 +41,7 @@ export interface TagCard {
 
 export interface HeroConfig {
   eyebrow: string; title: string; titleEmphasis: string; lede: string; image: string;
+  heroImage?: string;
   ctaPrimary: CtaLink; ctaSecondary: CtaLink; stats: Stat[]; tagCard: TagCard;
 }
 
