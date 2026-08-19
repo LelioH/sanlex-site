@@ -1,7 +1,7 @@
 {
   "name": "sanlex-site",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Site da Sanlex Confecções — lingerie feminina (atacado e varejo). React + TypeScript + Vite.",
   "scripts": {
